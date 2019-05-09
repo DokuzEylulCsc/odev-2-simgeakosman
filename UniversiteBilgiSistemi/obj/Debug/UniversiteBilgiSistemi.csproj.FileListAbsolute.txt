@@ -1,0 +1,16 @@
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\bin\Debug\UniversiteBilgiSistemi.exe.config
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\bin\Debug\UniversiteBilgiSistemi.exe
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\bin\Debug\UniversiteBilgiSistemi.pdb
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.exe
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.pdb
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.Genel_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.fakulte_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.ogr_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.ders_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.hoca_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.bolum_form.resources
+C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.Listeleme.resources
