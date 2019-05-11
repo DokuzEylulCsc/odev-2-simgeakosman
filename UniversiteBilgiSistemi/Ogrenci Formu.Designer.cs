@@ -41,6 +41,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btn_ogr_sil
@@ -60,6 +61,7 @@
             this.btn_ogr_ekle.TabIndex = 14;
             this.btn_ogr_ekle.Text = "Öğrenci Ekle";
             this.btn_ogr_ekle.UseVisualStyleBackColor = true;
+            this.btn_ogr_ekle.Click += new System.EventHandler(this.btn_ogr_ekle_Click);
             // 
             // label3
             // 
@@ -98,7 +100,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 52);
+            this.textBox2.Location = new System.Drawing.Point(139, 48);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 9;
@@ -152,11 +154,20 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Ders ID";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(308, 21);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(349, 290);
+            this.listBox1.TabIndex = 22;
+            // 
             // ogr_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 269);
+            this.ClientSize = new System.Drawing.Size(833, 410);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
@@ -193,5 +204,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

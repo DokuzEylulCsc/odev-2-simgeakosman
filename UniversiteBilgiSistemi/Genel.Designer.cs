@@ -32,7 +32,7 @@
             this.btn_fakulte = new System.Windows.Forms.Button();
             this.btn_ders = new System.Windows.Forms.Button();
             this.btn_hoca = new System.Windows.Forms.Button();
-            this.btn_listeleme = new System.Windows.Forms.Button();
+            this.btn_bolum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_ogr
@@ -75,28 +75,28 @@
             this.btn_hoca.UseVisualStyleBackColor = true;
             this.btn_hoca.Click += new System.EventHandler(this.btn_hoca_Click);
             // 
-            // btn_listeleme
+            // btn_bolum
             // 
-            this.btn_listeleme.Location = new System.Drawing.Point(184, 141);
-            this.btn_listeleme.Name = "btn_listeleme";
-            this.btn_listeleme.Size = new System.Drawing.Size(125, 79);
-            this.btn_listeleme.TabIndex = 4;
-            this.btn_listeleme.Text = "Listeleme";
-            this.btn_listeleme.UseVisualStyleBackColor = true;
-            this.btn_listeleme.Click += new System.EventHandler(this.btn_listeleme_Click);
+            this.btn_bolum.Location = new System.Drawing.Point(144, 148);
+            this.btn_bolum.Name = "btn_bolum";
+            this.btn_bolum.Size = new System.Drawing.Size(185, 96);
+            this.btn_bolum.TabIndex = 0;
+            this.btn_bolum.Text = "Bölüm İşlemleri";
+            this.btn_bolum.Click += new System.EventHandler(this.btn_bolum_Click);
             // 
             // Genel_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(532, 275);
-            this.Controls.Add(this.btn_listeleme);
+            this.Controls.Add(this.btn_bolum);
             this.Controls.Add(this.btn_hoca);
             this.Controls.Add(this.btn_ders);
             this.Controls.Add(this.btn_fakulte);
             this.Controls.Add(this.btn_ogr);
             this.Name = "Genel_form";
             this.Text = "Öğrenci Bilgi Sistemi";
+            this.Load += new System.EventHandler(this.Genel_form_Load);
             this.ResumeLayout(false);
 
         }
@@ -107,7 +107,7 @@
         private System.Windows.Forms.Button btn_fakulte;
         private System.Windows.Forms.Button btn_ders;
         private System.Windows.Forms.Button btn_hoca;
-        private System.Windows.Forms.Button btn_listeleme;
+        private System.Windows.Forms.Button btn_bolum;
     }
 }
 

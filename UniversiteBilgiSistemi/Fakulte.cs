@@ -23,8 +23,9 @@ namespace UniversiteBilgiSistemi
             {
                 var xml = new XmlSerializer(typeof(Fakulte));
                 xml.Serialize(stream, this);
+                
             }
-
+         
         }
             
     }

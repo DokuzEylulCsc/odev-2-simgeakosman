@@ -16,5 +16,33 @@ namespace UniversiteBilgiSistemi
         {
             InitializeComponent();
         }
+
+        private void btn_bolum_ekle_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                if (textBox2.Text != "")
+                {
+
+                    Bolum yenibolum = new Bolum();
+                    yenibolum.bolum_adi = textBox2.Text;
+                    yenibolum.bolum_ID= textBox1.Text;
+                    Dictionary<string, string> BolumKaydet = new Dictionary<string, string>();
+                    BolumKaydet.Add(textBox1.Text, textBox2.Text);
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    foreach (var lsyaz in BolumKaydet)
+                    {
+                        listBox1.Items.Add(lsyaz);
+                    }
+
+                }
+                else Console.WriteLine("Eksik Bilgi girdiniz");
+            }
+            else Console.WriteLine("Eksik Bilgi girdiniz");
+
+        }
+
+        
     }
 }

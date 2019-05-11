@@ -28,5 +28,10 @@ namespace UniversiteBilgiSistemi
             frm.Show();
             this.Hide();
         }
+
+        private void btn_ogr_ekle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

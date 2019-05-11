@@ -34,6 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_bolum_ekle = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label2
@@ -76,6 +77,7 @@
             this.btn_bolum_ekle.TabIndex = 24;
             this.btn_bolum_ekle.Text = "Bölüm Ekle";
             this.btn_bolum_ekle.UseVisualStyleBackColor = true;
+            this.btn_bolum_ekle.Click += new System.EventHandler(this.btn_bolum_ekle_Click);
             // 
             // button1
             // 
@@ -86,11 +88,21 @@
             this.button1.Text = "Ana Menüye Dön";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(281, 13);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(321, 251);
+            this.listBox1.TabIndex = 27;
+            
+            // 
             // bolum_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 195);
+            this.ClientSize = new System.Drawing.Size(682, 339);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_bolum_ekle);
             this.Controls.Add(this.label2);
@@ -112,5 +124,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_bolum_ekle;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

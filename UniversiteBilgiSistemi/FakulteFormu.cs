@@ -31,10 +31,29 @@ namespace UniversiteBilgiSistemi
 
         private void btn_fakulte_ekle_Click(object sender, EventArgs e)
         {
-            Fakulte deger = new Fakulte();
-            deger.Fklteadi = textBox2.Text;
-            deger.Fklte_ID = textBox1.Text;
-            deger.save("Fakulte.xml");
+            if (textBox1.Text != "")
+            {
+                if (textBox2.Text != "")
+                {
+
+                    Fakulte deger = new Fakulte();
+                    deger.Fklteadi = textBox2.Text;
+                    deger.Fklte_ID = textBox1.Text;
+                    Dictionary<string, string> FakulteKaydet = new Dictionary<string, string>();
+                    FakulteKaydet.Add(textBox1.Text, textBox2.Text);
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    foreach (var grdyaz in FakulteKaydet)
+                    {
+                        listBox1.Items.Add(grdyaz);
+                    }
+
+                }
+                else Console.WriteLine("Eksik Bilgi girdiniz");
+            }
+            else Console.WriteLine("Eksik Bilgi girdiniz");
+
+            
         }
     }
 }

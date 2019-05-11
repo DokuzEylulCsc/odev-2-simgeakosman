@@ -13,4 +13,3 @@ C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\
 C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.ders_form.resources
 C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.hoca_form.resources
 C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.bolum_form.resources
-C:\Users\Lenovo\Desktop\UniversiteBilgiSistemi\UniversiteBilgiSistemi\obj\Debug\UniversiteBilgiSistemi.Listeleme.resources

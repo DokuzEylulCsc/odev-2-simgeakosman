@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace UniversiteBilgiSistemi
 {
@@ -46,11 +47,16 @@ namespace UniversiteBilgiSistemi
             this.Hide();
         }
 
-        private void btn_listeleme_Click(object sender, EventArgs e)
+        private void btn_bolum_Click(object sender, EventArgs e)
         {
-            Listeleme frm = new Listeleme();
+            bolum_form frm = new bolum_form();
             frm.Show();
             this.Hide();
+        }
+
+        private void Genel_form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
