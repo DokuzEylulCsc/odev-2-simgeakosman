@@ -37,12 +37,19 @@ namespace UniversiteBilgiSistemi
                     }
 
                 }
-                else Console.WriteLine("Eksik Bilgi girdiniz");
+                else MessageBox.Show("Eksik Bilgi girdiniz");
             }
-            else Console.WriteLine("Eksik Bilgi girdiniz");
+            else MessageBox.Show("Eksik Bilgi girdiniz");
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Genel_form frm = new Genel_form();
+            frm.Show();
+            this.Hide();
+
+        }
+
     }
 }

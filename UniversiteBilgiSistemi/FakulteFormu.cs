@@ -49,11 +49,13 @@ namespace UniversiteBilgiSistemi
                     }
 
                 }
-                else Console.WriteLine("Eksik Bilgi girdiniz");
+                else MessageBox.Show("Eksik Bilgi girdiniz");
             }
-            else Console.WriteLine("Eksik Bilgi girdiniz");
+            else MessageBox.Show("Eksik Bilgi girdiniz");
 
             
         }
+
+       
     }
 }
