@@ -13,20 +13,34 @@ namespace UniversiteBilgiSistemi
     {
         public String Fklteadi { get; set; }
         public string Fklte_ID { get; set; }
-        public void bolumekle()
+
+        public Fakulte()
         {
-           
+
         }
-       public void save(string Dosyaadi)
+
+        public Fakulte(string Fklteadi,string Fklte_ID)
         {
-            using (var stream = new FileStream(Dosyaadi, FileMode.Create))
-            {
-                var xml = new XmlSerializer(typeof(Fakulte));
-                xml.Serialize(stream, this);
-                
-            }
+            this.Fklteadi = Fklteadi;
+            this.Fklte_ID = Fklte_ID;
+        }
+        
+        private static Dictionary<string, Bolum> BolumListe = new Dictionary<string, Bolum>();
+        public static Dictionary<string,Bolum> GetBolum
+        {
+            get { return BolumListe; }
+        }
+
+
+        public void Bolumekle(string bolum_ID,Bolum b)
+        {
+            
+            BolumListe.Add(bolum_ID,b);
+        }
+
+        
          
         }
             
     }
-}
+

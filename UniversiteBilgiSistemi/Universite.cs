@@ -7,15 +7,20 @@ using System.Threading.Tasks;
 namespace UniversiteBilgiSistemi
 {
     class Universite
+
     {
-        public void fakulteekle()
+       private static Dictionary<string, Fakulte> FakulteListe = new Dictionary<string,Fakulte>();
+        public static Dictionary<string, Fakulte> GetFakulte
         {
-
+            get { return FakulteListe; }
         }
-        public void fakultesil()
+       
+        public void fakulteekle(string faklteId,Fakulte f)
         {
-
+            
+            FakulteListe.Add(faklteId,new Fakulte(f.Fklte_ID,f.Fklteadi));
         }
+        
 
     }
 }

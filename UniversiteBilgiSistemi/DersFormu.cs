@@ -28,5 +28,15 @@ namespace UniversiteBilgiSistemi
             frm.Show();
             this.Hide();
         }
+        Bolum bolum = new Bolum();
+
+        private void btn_ders_ekle_Click(object sender, EventArgs e)
+        {
+            bolum.Dersekle(textBox1.Text, new Ders(textBox2.Text, textBox1.Text));
+            foreach (Ders ders in Bolum.GetDers.Values)
+            {
+                listBox1.Items.Add(ders.ders_ID + ders.ders_adi);
+            }
+        }
     }
 }

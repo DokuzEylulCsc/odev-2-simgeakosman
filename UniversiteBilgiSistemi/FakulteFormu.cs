@@ -28,30 +28,16 @@ namespace UniversiteBilgiSistemi
             frm.Show();
             this.Hide();
         }
-
+        Universite universite = new Universite();
         private void btn_fakulte_ekle_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "")
+            universite.fakulteekle(textBox2.Text, new Fakulte(textBox1.Text, textBox2.Text));
+            foreach(Fakulte fakulte in Universite.GetFakulte.Values)
             {
-                if (textBox2.Text != "")
-                {
-
-                    Fakulte deger = new Fakulte();
-                    deger.Fklteadi = textBox2.Text;
-                    deger.Fklte_ID = textBox1.Text;
-                    Dictionary<string, string> FakulteKaydet = new Dictionary<string, string>();
-                    FakulteKaydet.Add(textBox1.Text, textBox2.Text);
-                    textBox1.Clear();
-                    textBox2.Clear();
-                    foreach (var grdyaz in FakulteKaydet)
-                    {
-                        listBox1.Items.Add(grdyaz);
-                    }
-
-                }
-                else MessageBox.Show("Eksik Bilgi girdiniz");
+                listBox1.Items.Add(fakulte.Fklte_ID+fakulte.Fklteadi);
             }
-            else MessageBox.Show("Eksik Bilgi girdiniz");
+        
+            
 
             
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniversiteBilgiSistemi
 {
-    class Ders
+     public class Ders
     {
         public String ders_adi{ get; set; }
         public string ders_ID { get; set; }
@@ -15,5 +15,7 @@ namespace UniversiteBilgiSistemi
             this.ders_adi = ders_adi;
             this.ders_ID = ders_ID;
         }
+
+
     }
 }

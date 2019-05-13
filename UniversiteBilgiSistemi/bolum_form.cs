@@ -16,30 +16,15 @@ namespace UniversiteBilgiSistemi
         {
             InitializeComponent();
         }
-
+        Fakulte fakulte = new Fakulte();
         private void btn_bolum_ekle_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "")
+            fakulte.Bolumekle(textBox1.Text, new Bolum(textBox1.Text, textBox2.Text));
+            foreach (Bolum bolum in Fakulte.GetBolum.Values)
             {
-                if (textBox2.Text != "")
-                {
-
-                    Bolum yenibolum = new Bolum();
-                    yenibolum.bolum_adi = textBox2.Text;
-                    yenibolum.bolum_ID= textBox1.Text;
-                    Dictionary<string, string> BolumKaydet = new Dictionary<string, string>();
-                    BolumKaydet.Add(textBox1.Text, textBox2.Text);
-                    textBox1.Clear();
-                    textBox2.Clear();
-                    foreach (var lsyaz in BolumKaydet)
-                    {
-                        listBox1.Items.Add(lsyaz);
-                    }
-
-                }
-                else MessageBox.Show("Eksik Bilgi girdiniz");
+                listBox1.Items.Add(bolum.bolum_ID + bolum.bolum_adi);
             }
-            else MessageBox.Show("Eksik Bilgi girdiniz");
+
 
         }
 
@@ -51,5 +36,19 @@ namespace UniversiteBilgiSistemi
 
         }
 
+        private void bolum_form_Load(object sender, EventArgs e)
+        {
+            btn_bolum_ekle.Enabled = false;
+            foreach (Fakulte fakulte in Universite.GetFakulte.Values)
+            {
+                comboBox1.Items.Add(fakulte.Fklte_ID + fakulte.Fklteadi);
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btn_bolum_ekle.Enabled = comboBox1.SelectedItem != null;
+        }
     }
 }

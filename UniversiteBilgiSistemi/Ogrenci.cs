@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace UniversiteBilgiSistemi
 {
-    abstract class Ogrenci
+   public abstract class Ogrenci
     {
        
-        private string AdiSoyadi { get; set; }
+      public string AdiSoyadi { get; set; }
 
-        private string Ogr_no;
+        public string Ogr_no;
 
        public string OgrNo
         {
@@ -31,6 +31,7 @@ namespace UniversiteBilgiSistemi
             this.Ogr_no = Ogr_no;
         }
 
+       
 
        
     }
