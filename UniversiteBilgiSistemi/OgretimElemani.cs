@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniversiteBilgiSistemi
 {
-    class OgretimElemani
+     public class OgretimElemani
     {
         public string Hoca_Adi_Soyadi { get; set; }
         public string Hoca_ID { get; set; }

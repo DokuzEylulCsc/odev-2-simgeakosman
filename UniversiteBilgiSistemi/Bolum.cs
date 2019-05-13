@@ -53,16 +53,23 @@ namespace UniversiteBilgiSistemi
         }
         public void OgrSil(string ders_id)
         {
-            DersListe.Remove(ders_id);
+            OgrListe.Remove(ders_id);
         }
 
-        public void hocaekle()
+        private static Dictionary<string, OgretimElemani> HocaListe = new Dictionary<string, OgretimElemani>();
+        public static Dictionary<string, OgretimElemani> GetHoca
         {
-
+            get { return HocaListe; }
         }
-        public void hocasil()
+
+        public void HocaEkle(string hoca_id, OgretimElemani h)
         {
 
+            HocaListe.Add(hoca_id, h);
+        }
+        public void HocaSil(string hoca_id)
+        {
+            HocaListe.Remove(hoca_id);
         }
 
 

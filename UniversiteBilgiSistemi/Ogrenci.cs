@@ -11,7 +11,7 @@ namespace UniversiteBilgiSistemi
        
       public string AdiSoyadi { get; set; }
 
-        public string Ogr_no;
+        private string Ogr_no;
 
        public string OgrNo
         {
