@@ -22,7 +22,7 @@ namespace UniversiteBilgiSistemi
             fakulte.Bolumekle(textBox1.Text, new Bolum(textBox1.Text, textBox2.Text));
             foreach (Bolum bolum in Fakulte.GetBolum.Values)
             {
-                listBox1.Items.Add(bolum.bolum_ID + bolum.bolum_adi);
+                listBox1.Items.Add(comboBox1.SelectedItem.ToString()+ bolum.bolum_ID + bolum.bolum_adi);
             }
 
 
